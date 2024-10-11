@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Mania</title>
+    <link rel="icon" href="AI_MANIA.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light grey background for the whole page */
+        }
+        header {
+            background-color: lightsteelblue; /* Bright blue */
+            color: black; /* Black text for title */
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #003366; /* Dark blue for navbar */
+        }
+        nav a {
+            color: white; /* White text for navbar */
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black; /* Black text on hover */
+        }
+        section {
+            padding: 60px 20px;
+            height: auto; /* Adjusted for dynamic content */
+        }
+        #home {
+            background-color: #009688; /* Teal */
+            color: black; /* Black text */
+        }
+        #scoreboard {
+            background-color: lightsteelblue; /* Light steel blue */
+            color: black; /* Black text */
+        }
+        #office-bearers {
+            background-color: #009688; /* Teal */
+            color: black; /* Black text */
+            text-align: center;
+            padding: 40px 20px;
+        }
+        #contact {
+            background-color: lightsteelblue; /* Light steel blue */
+            color: black; /* Black text */
+        }
+        .office-bearer {
+            display: inline-block;
+            margin: 10px;
+        }
+        .office-bearer img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Circular images */
+        }
+        .swiper {
+            width: 100%;
+            height: 300px;
+            margin: 20px 0;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            background: #6F42C1; /* Purple */
+            color: white;
+        }
+        .scoreboard-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .scoreboard-table th, .scoreboard-table td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+            color: black; /* Black text for scoreboard table */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ai Mania</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#scoreboard">Scoreboard</a>
+    <a href="#office-bearers">Office Bearers</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<section id="home">
+    <h2>EVENT ANNOUNCEMENTS</h2>
+    
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<section id="scoreboard">
+    <h2>Scoreboard</h2>
+    <table class="scoreboard-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Name 1</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Name 2</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>Name 3</td>
+                <td>C</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="office-bearers">
+    <h2>Office Bearers</h2>
+    <div class="office-bearer">
+        <img src="hi.img.png" alt="Office Bearer 1">
+        <p>Office Bearer 1</p>
+    </div>
+    <div class="office-bearer">
+        <img src="hi.img.png" alt="Office Bearer 2">
+        <p>Office Bearer 2</p>
+    </div>
+    <div class="office-bearer">
+        <img src="hi.img.png" alt="Office Bearer 3">
+        <p>Office Bearer 3</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out to us! </p>
+     <p>  +919489999999</p>
+<p>
+        example@gmail.com
+    </p>
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+</body>
+</html>
